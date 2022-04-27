@@ -16,13 +16,13 @@
  height: 100%;
  padding:75px;
  background-size: cover;
- background-image:url(/Images/Interview.jpg);
+ background-image:url(/src/Images/Interview.jpg);
 }
 .background-img-login{
   height: 100vh;
   padding:10%;
   background-size: cover;
-  background-image:url(/Images/Interview.jpg);
+  background-image:url(/src/Images/Interview.jpg);
 }
 .Login{
  margin: 5vh 20vw;
