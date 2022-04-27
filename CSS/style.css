@@ -278,6 +278,13 @@ body
   color: white; 
 }
 
+/*this is the css for footer in every page*/
+.footer-main{
+  position: fixed;
+  width: 85vw;
+  bottom: 0;
+}
+
 
 /*Padding for Profile*/
 #align  
