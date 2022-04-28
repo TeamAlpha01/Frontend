@@ -18,13 +18,13 @@
  height: 100%;
  padding:75px;
  background-size: cover;
- background-image:url(Images/Interview.jpg);
+ background-image:url(/Images/Interview.jpg);
 }
 .background-img-login{
   height: 100vh;
   padding:10%;
   background-size: cover;
-  background-image:url(Images/Interview.jpg);
+  background-image:url(/Images/Interview.jpg);
 }
 .Login{
  margin: 5vh 20vw;
@@ -495,7 +495,8 @@ body {
 }
 
 .card-block {
-    padding: 1.25rem
+    /* padding: 1.25rem; */
+    width: 30rem;
 }
 
 .m-b-25 {
@@ -503,7 +504,7 @@ body {
 }
 
 .img-radius {
-    border-radius: 5px
+    border-radius: 10px;
 }
 
 h6 {
@@ -518,10 +519,6 @@ h6 {
     p {
         font-size: 14px
     }
-}
-
-.card-block {
-    padding: 1.25rem
 }
 
 .b-b-default {
@@ -582,7 +579,7 @@ h6 {
 
 .user-card-full .social-link li a {
     font-size: 20px;
-    margin: 0 10px 0 0;
+    margin: 0 0 0 0;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out
 }
@@ -1348,3 +1345,41 @@ h1.heading {
   
 
 }
+.Location{
+  margin-top: 5vh ;    
+}
+.card:hover {
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.grey-bg {  
+  background-color: #F5F7FA;
+}
+.media{
+  height: 5vw;
+}
+.title{
+  font-size: 1.5rem;
+}
+@media screen and (max-width: 1000px) {
+  .title{
+      font-size: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .title{
+      font-size: 1rem;
+  }
+}
+@media screen and (max-with: 800px) {
+  .title{
+      font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title{
+      font-size: 1.5rem;
+  }
+}
+
+
