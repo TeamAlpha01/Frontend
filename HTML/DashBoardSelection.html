@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Layout</title>
+    <title>DashBoard Selection </title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,7 +29,7 @@
 
 
     <!-- Template Stylesheet -->
-    <link href="src/CSS/style.css" rel="stylesheet">
+    <link href="/CSS/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,21 +38,20 @@
         <nav class="navbar bg-light navbar-light">
            <div class="user-profile">
                <div>
-                   <img src="src/Images/profile_.png" class="profile-img" alt="">
+                   <img src="/Images/profile_.png" class="profile-img" alt="">
                </div>
                <p class="username">Username</p>
-               <a href="#" class="logout-btn " >Logout</a>
+               <a href="#/HTML/Login.html" class="logout-btn " >Logout</a>
            </div>
         
 
             <div class="navbar-nav w-100">                
-                <a href="/Home.html" class="nav-item nav-link active"><i class="fa fa-home"></i> Home</a>
-                <a href="/Profile.html" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
-                <a href="#" class="nav-item nav-link "><i class="fa fa-bell"></i> Notifications</a>
-                <a href="/DashBoard.html" class="nav-item nav-link"><i class="fa fa-info-circle"></i> Dashboard</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-trash"></i> Remove Members</a>
-                <a href="/CreateInvite.html" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create Invite</a>
+                <a href="/HTML/Home.html" class="nav-item nav-link "><i class="fa fa-home"></i> Home</a>
+                <a href="/HTML/Profile.html" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
+                <a href="/HTML/DashBoard.html" class="nav-item nav-link active"><i class="fa fa-info-circle"></i> Dashboard</a>
+                <a href="/HTML/Manage_Pools.html" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
+                <a href="/HTML/CreateInvite.html" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create
+                    Invite</a>
             </div>
         </nav>
     </div>
@@ -71,45 +70,29 @@
         </div>
         <!-- Navbar End -->
 
-        <div class="container" id="ViewPoolContainer">
-          <div class="box d-flex" id="CurrentDrivesFilterBox">
-              <div class="form-input d-flex align-self-center  mx-5 px-4">
-                <label class="form-label my-2" for="Department Name">Department:</label>
-                <select name="CategoryName" id="Department Name" class="form-select">
-                    <option value="">Select the Department</option>
-                    <option value="iPhone">.Net</option>
-                    <option value="iPad">Java</option>
-                    <option value="Mac">BFS</option>
-                    <option value="Watch">LAMP</option>
-                </select>
-              </div>
-              <div class="form-input d-flex align-self-center mx-5 ">
-                <label class="form-label my-2"for="Role">Role:</label>
-                <select name="CategoryName" id="Role" class="form-select">
-                    <option value="">Select the Role</option>
-                    <option value="iPhone">SE</option>
-                    <option value="iPad">SSE</option>
-                    <option value="Mac">PM</option>
-                    <option value="Watch">TL</option>
-                </select>
-              </div>
-              <button type="button" class="btn btn-outline-danger align-self-center mx-5" id="ViewPoolFilterButton">Filter</button>
+        <!-- DashBoardSelectioincards -->
+    <div class="d-flex container container-fluid justify-content-evenly MDashboard">
+        <div class="card-Dashboard mperf  display-5 align-content-center" >
+            <img src="/Images/ProfileIcon.png" class="card-img-top" alt="ProfileIcon">
+            <div class="card-body">
+              
+              <a href="" class="btn btn-default">MY PERFORMANCE</a>
             </div>
-        
-            <div class="d-flex">
-                  <button class="btn" id="FreshersButton">FRESHERS</button>
-                  <button class="btn" id="SoftwareEngineerButton">SOFTWARE ENGINEER</button>
-                  <button class="btn" id="SeniorSoftwareEngineerBuuton">SENIOR SOFTWARE ENGINEER</button>
-            </div>
-            <div class="d-flex">
-                  <button class="btn" id="ProjectLeadButton">PROJECT LEAD</button>
-                  <button class="btn" id="TeamLeadButton">TEAM LEAD</button>
-                  <button class="btn" id="ManagementButton">MANAGEMENT</button>
-            </div>
+          </div>
+
+        <div class="card-Dashboard pmperf  display-5 align-content-center">
+        <img src="/Images/Groupicon.png" class="card-img-top" alt="ProfileIcon">
+        <div class="card-body">
+            
+            <a href="" class="btn btn-default">POOL PERFORMANCE</a>
         </div>
+        </div>
+    </div>
+    
+        <!-- DashBoardSelectioincards End -->
         
 
-        <footer>
+        <!-- <footer>
             <div class="container-fluid flex-end pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
@@ -117,13 +100,12 @@
                             &copy; All Right Reserved.
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By ALPHA</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
 
         <!-- JavaScript Libraries -->
@@ -138,7 +120,7 @@
         <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="src/JS/main.js"></script>
+        <script src="main.js"></script>
 </body>
 
 </html>

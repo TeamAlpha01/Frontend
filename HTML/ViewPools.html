@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Layout</title>
+    <title>IMS-View Pool</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -41,18 +41,16 @@
                    <img src="/Images/profile_.png" class="profile-img" alt="">
                </div>
                <p class="username">Username</p>
-               <a href="#" class="logout-btn " >Logout</a>
+               <a href="/HTML/Login.html" class="logout-btn " >Logout</a>
            </div>
         
 
             <div class="navbar-nav w-100">                
                 <a href="/HTML/Home.html" class="nav-item nav-link active"><i class="fa fa-home"></i> Home</a>
                 <a href="/HTML/Profile.html" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
-                <a href="#" class="nav-item nav-link "><i class="fa fa-bell"></i> Notifications</a>
                 <a href="/HTML/DashBoard.html" class="nav-item nav-link"><i class="fa fa-info-circle"></i> Dashboard</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-trash"></i> Remove Members</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create Invite</a>
+                <a href="/HTML/Manage_Pools.html" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
+                <a href="/HTML/CreateInvite.html" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create Invite</a>
             </div>
         </nav>
     </div>
@@ -67,32 +65,55 @@
             </div>
         </nav>
         <div class="page-title">
-            <h2 style="text-align: center;">Home</h2>
+            <h2 style="text-align: center;">View Pool</h2>
         </div>
         <!-- Navbar End -->
+        
+            <div class="container">
+                <div class="box row container CurrentDrivesFilterBox" >
+                    <h3 class="col-5 d-flex justify-content-center Filter">Department:
+                        <div>
+                            <select name="Department" id="Department Name" class="form-select ">
+                                <option value="">Select the Department</option>
+                                <option value=".Net">.Net</option>
+                                <option value="Java">Java</option>
+                                <option value="BFS">BFS</option>
+                                <option value="LAMP">LAMP</option>
+                            </select>
+                        </div>
+                    </h3>
+                    <h3 class="col-5 d-flex justify-content-center Filter">Pool:
+                        <div>
+                            <select name="Pool" id="Pool" class="form-select ">
+                                <option value="">Select the Pool</option>
+                                <option value="FRESHERS">FRESHERS</option>
+                                <option value="TL">TL</option>
+                                <option value="SSE">SSE</option>
+                                <option value="SE">SE</option>
+                            </select>
+                        </div>
+                    </h3>
+                    <div class="col-2 ">
+                        <button class="btn btn-outline-danger CurrentDrivesFilterButton" >Filter</button>
+                    </div>
+                    
+                </div> 
+                <div class="d-flex mx-4">
+                    <button class="btn FreshersButton">FRESHERS</button>
+                    <button class="btn SoftwareEngineerButton">SOFTWARE ENGINEER</button>
+                    <button class="btn SeniorSoftwareEngineerBuuton">SENIOR SOFTWARE ENGINEER</button>
+                </div>
+                <div class="d-flex mx-4">
+                    <button class="btn ProjectLeadButton">PROJECT LEAD</button>
+                    <button class="btn TeamLeadButton">TEAM LEAD</button>
+                    <button class="btn ManagementButton">MANAGEMENT</button>
+                </div>
+            </div>
+        
 
-        <div class="Register">
-          <div class="card-body">
-              <form>                  
-                  <div class="form-input">
-                      <label class="form-label" for="Name">POOL NAME </label>
-                      <input type="text" id="Name" class="form-control " />
-                  </div>
-                  <div class="form-input">
-                      <label class="form-label " for="Department Name">Department</label>
-                      <select name="Department" id="Department Name" class="form-select ">
-                          <option value="">Select the Department</option>
-                          <option value=".Net">fresher</option>
-                          <option value="Java">Java</option>
-                          <option value="BFS">BFS</option>
-                          <option value="LAMP">LAMP</option>
-                      </select>
-                  </div>
-              </form>
-          </div>
-        </div>
+       
 
-        <footer>
+        <!-- <footer>
             <div class="container-fluid flex-end pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
@@ -100,13 +121,12 @@
                             &copy; All Right Reserved.
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By ALPHA</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
 
         <!-- JavaScript Libraries -->
@@ -121,7 +141,8 @@
         <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="src/JS/main.js"></script>
+        <script src="/JS/main.js"></script>
+    </div>
 </body>
 
 </html>

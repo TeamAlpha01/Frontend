@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>DashBoard Selection </title>
+    <title>Layout</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">
@@ -29,30 +29,29 @@
 
 
     <!-- Template Stylesheet -->
-    <link href="style.css" rel="stylesheet">
+    <link href="/CSS/style.css" rel="stylesheet">
 </head>
 
 <body>
     <!-- Sidebar Start -->
     <div class="sidebar">
         <nav class="navbar bg-light navbar-light">
-           <div class="user-profile">
-               <div>
-                   <img src="./profile_.png" class="profile-img" alt="">
-               </div>
-               <p class="username">Username</p>
-               <a href="#" class="logout-btn " >Logout</a>
-           </div>
-        
+            <div class="user-profile">
+                <div>
+                    <img src="/Images/profile_.png" class="profile-img" alt="">
+                </div>
+                <p class="username">Username</p>
+                <a href="#" class="logout-btn ">Logout</a>
+            </div>
 
-            <div class="navbar-nav w-100">                
-                <a href="#" class="nav-item nav-link active"><i class="fa fa-home"></i> Home</a>
-                <a href="#" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
-                <a href="#" class="nav-item nav-link "><i class="fa fa-bell"></i> Notifications</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-info-circle"></i> Dashboard</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-trash"></i> Remove Members</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create Invite</a>
+
+            <div class="navbar-nav w-100">
+                <a href="/HTML/Home.html" class="nav-item nav-link active"><i class="fa fa-home"></i> Home</a>
+                <a href="/HTML/Profile.html" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
+                <a href="/HTML/DashBoard.html" class="nav-item nav-link"><i class="fa fa-info-circle"></i> Dashboard</a>
+                <a href="/HTML/Manage_Pools.html" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>                
+                <a href="/HTML/CreateInvite.html" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create
+                    Invite</a>
             </div>
         </nav>
     </div>
@@ -61,7 +60,7 @@
     <!-- Content Start -->
     <div class="content">
         <!-- Navbar Start -->
-        <nav  class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
+        <nav class="navbar navbar-expand bg-light navbar-light sticky-top px-4 py-0">
             <div class="sidebar-toggler flex-shrink-0">
                 <i class="fa fa-bars"></i>
             </div>
@@ -71,27 +70,48 @@
         </div>
         <!-- Navbar End -->
 
-        <!-- DashBoardSelectioincards -->
-    <div class="d-flex container container-fluid justify-content-evenly MDashboard">
-        <div class="card mperf  display-5 align-content-center" >
-            <img src="/Images/ProfileIcon.png" class="card-img-top" alt="ProfileIcon">
-            <div class="card-body">
-              
-              <a href="" class="btn btn-default">MY PERFORMANCE</a>
+        <div class="row">
+            <div class="col-12 col-sm-6 text-center text-sm-start">
+                <h4 style="text-align: left;">List of Location</h4>
             </div>
-          </div>
+            <div class="col-12 col-sm-6 text-center text-sm-end">
+                <button class="button-admin button1-admin">Add Location</button></a>
+            </div>
+        </div>
+        <div class=" justify-content-center ">
 
-        <div class="card pmperf  display-5 align-content-center">
-        <img src="/Images/Groupicon.png" class="card-img-top" alt="ProfileIcon">
-        <div class="card-body">
-            
-            <a href="" class="btn btn-default">POOL PERFORMANCE</a>
+            <div class="location-admin ">
+                <p>
+                <h6>CHENNAI<div class="location1-admin"></a><button class="button-admin button1-admin mx-5"><i
+                                class="fa-solid fa-trash"></i></button></h6>
+                </p>
+            </div>
+            <div class="location-admin ">
+                <p>
+                <h6>ILLINOIS<div class="location1-admin"></a><button class="button-admin button1-admin mx-5"><i
+                                class="fa-solid fa-trash"></i></button></h6>
+                </p>
+            </div>
+            <div class="location-admin ">
+                <p>
+                <h6>HYEDRABAD<div class="location1-admin"></a><button class="button-admin button1-admin mx-5"><i
+                                class="fa-solid fa-trash"></i></button></h6>
+                </p>
+            </div>
+            <div class="location-admin ">
+                <p>
+                <h6>PUNE<div class="location1-admin"></a><button class="button-admin button1-admin mx-5"><i
+                                class="fa-solid fa-trash"></i></button></h6>
+                </p>
+            </div>
+            <div class="location-admin ">
+                <p>
+                <h6>DUBAI<div class="location1-admin"></a><button class="button-admin button1-admin mx-5"><i
+                                class="fa-solid fa-trash"></i></button></h6>
+                </p>
+            </div>
         </div>
-        </div>
-    </div>
-    
-        <!-- DashBoardSelectioincards End -->
-        
+
 
         <footer>
             <div class="container-fluid flex-end pt-4 px-4">
@@ -122,7 +142,7 @@
         <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="src/JS/main.js"></script>
+        <script src="/JS/main.js"></script>
 </body>
 
 </html>

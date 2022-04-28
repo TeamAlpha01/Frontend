@@ -29,7 +29,7 @@
 
 
     <!-- Template Stylesheet -->
-    <link href="src/CSS/style.css" rel="stylesheet">
+    <link href="/CSS/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -38,21 +38,20 @@
         <nav class="navbar bg-light navbar-light">
             <div class="user-profile">
                 <div>
-                    <img src="src/Images/profile_.png" class="profile-img" alt="">
+                    <img src="/Images/profile_.png" class="profile-img" alt="">
                 </div>
                 <p class="username">Username</p>
-                <a href="#" class="logout-btn ">Logout</a>
+                <a href="/HTML/Login.html" class="logout-btn ">Logout</a>
             </div>
 
 
             <div class="navbar-nav w-100">
-                <a href="Home.html" class="nav-item nav-link active"><i class="fa fa-home"></i> Home</a>
-                <a href="Profile.html" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
-                <a href="#" class="nav-item nav-link "><i class="fa fa-bell"></i> Notifications</a>
-                <a href="DashBoard.html" class="nav-item nav-link"><i class="fa fa-info-circle"></i> Dashboard</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
-                <a href="#" class="nav-item nav-link"><i class="fa fa-trash"></i> Remove Members</a>
-                <a href="CreateInvite.html" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create Invite</a>
+                <a href="/HTML/Home.html" class="nav-item nav-link "><i class="fa fa-home"></i> Home</a>
+                <a href="/HTML/Profile.html" class="nav-item nav-link"><i class='fa fa-user-circle'></i> Profile</a>
+                <a href="/HTML/DashBoard.html" class="nav-item nav-link active"><i class="fa fa-info-circle"></i> Dashboard</a>
+                <a href="/HTML/Manage_Pools.html" class="nav-item nav-link"><i class="fa fa-user-tie"></i> Manage Pool</a>
+                <a href="/HTML/CreateInvite.html" class="nav-item nav-link"><i class="fa fa-calendar-week"></i> Create
+                    Invite</a>
             </div>
         </nav>
     </div>
@@ -67,47 +66,59 @@
             </div>
         </nav>
         <div class="page-title">
-            <h2 style="text-align: center;">CANCEL DRIVE</h2>
+            <h2 style="text-align: center;">DASHBOARD</h2>
         </div>
         <!-- Navbar End -->
 
-
-        <div class="container">
-            <div class="card mx-auto">
-                <div class="card-body">
-                    <div class="row rone mt-4">
-                        <div class="col-md-6">
-                            <p class="text-muted">DATE : 10/04/2022</p>
-                            <p class="text-muted">DRIVE NAME : FRESHERS2022</p>
-                            <p class="text-muted">ROLE : SSE</p>
-                        </div>
-                        <div class="col-md-6">
-                            <p class="text-muted">DEPARTMENT : .NET</p>
-                            <p class="text-muted">MODE : ONLINE</p>
-                        </div>
+        <div id="MDashboard" class="container row  ">
+            <div class="col-4 justify-content-center">
+                <div>
+                    <button id="MDashboardScheduled" class="btn btn-default display-5 mx-5">
+                        <h3 id="ScheduledCount">15<div class="display-6">Total No. of Drives Scheduled</div>
+                        </h3>
+                    </button>
+                </div>
+            </div>
+            <div class="col-8 justify-content-center">
+                <div class="justify-content-center row">
+                    <div class="col-4">
+                        <button id="AvailabilityGiven" class="btn btn-default display-5 mx-4">
+                            <h3 id="AvailabilityGivenCount">10<div class="display-6">Availability Given</div>
+                            </h3>
+                        </button>
                     </div>
+                    <div class="col-4">
+                        <button id="Utilized" class="btn btn-default display-5 mx-4 ">
+                            <h3 id="UtilizedCount">8<div class="display-6">Utilized</div>
+                            </h3>
+                        </button>
+                    </div>
+                    <div class="col-4">
+                        <button id="NotUtilized" class="btn btn-default display-5 mx-4 ">
+                            <h3 id="NotUtilizedCount">3<div class="display-6">Not Utilized</div>
+                            </h3>
+                        </button><br>
+                    </div>
+                </div>
 
-                    <br>
-                    <div>
-                        <div class="container kl"><br>
-                            <h6><b>CANCELLATION REASON :</b></h6><BR>
-                            <div class="form-outline">
-                                <input type="text" id="form12" class="form-control" />
-                                <br>
-                            </div>
-
-                            <div class="text-center">
-                                <button type="button" class="btn btn-primary btn-lg btn-block mt-3">Submit</button>
-                            </div>
-                            <br>
-                        </div>
+                <div class="justify-content-center row">
+                    <div class=" justify-content-center col-6">
+                        <button id="InterviewsIgnored" class="btn btn-default display-5 mx-4 ">
+                            <h3 id="IgnoredCount">2<div class="display-6">Interviews Ignored</div>
+                            </h3>
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button id="InterviewsDenied" class="btn btn-default display-5 mx-4 ">
+                            <h3 id="DeniedCount">3<div class="display-6">Interviews Denied</div>
+                            </h3>
+                        </button>
                     </div>
                 </div>
             </div>
         </div>
 
-
-        <footer>
+        <!-- <footer>
             <div class="container-fluid flex-end pt-4 px-4">
                 <div class="bg-light rounded-top p-4">
                     <div class="row">
@@ -115,13 +126,12 @@
                             &copy; All Right Reserved.
                         </div>
                         <div class="col-12 col-sm-6 text-center text-sm-end">
-                            <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                             Designed By ALPHA</a>
                         </div>
                     </div>
                 </div>
             </div>
-        </footer>
+        </footer> -->
 
 
         <!-- JavaScript Libraries -->
@@ -136,7 +146,7 @@
         <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
 
         <!-- Template Javascript -->
-        <script src="src/JS/main.js"></script>
+        <script src="/JS/main.js"></script>
 </body>
 
 </html>
