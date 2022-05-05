@@ -86,7 +86,7 @@ body {
   position: fixed;
   /* left: -250px; */
   width: 250px;
-  height: 100%;
+  min-height: 100vh;
   background: #b57ae6;
   /*   b295c0      8958a0 */
   transition: all .5s ease;
@@ -116,7 +116,7 @@ body {
 
 .sidebar ul a {
   display: block;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   line-height: 65px;
   font-size: 15px;
@@ -314,8 +314,9 @@ body {
   margin-left: 39rem;
   margin-top: 15rem;
 }
-.CreatePool{
-  margin-top: vh;
+
+.CreatePool {
+  margin-top: 25vh;
 }
 
 #buttonheight {
@@ -371,6 +372,7 @@ body {
   display: block;
   box-shadow: 0 0 15px #dae0e5
 }
+
 .card-filter {
   max-width: 1000px;
   border: none;
@@ -380,19 +382,55 @@ body {
   display: block;
   /* box-shadow: 0 0 15px #dae0e5 */
 }
-.filter-btn{
-  margin-top: 30px;
-  margin-left: 50px;
+
+.background {
+  background: #b57ae6;
+}
+
+
+
+.btn-filter {
+  margin-top: 15px;
   color: white;
-  background-color:#b57ae6 ;
-  border-radius: 5%;  
+  background-color: #b57ae6;
 }
-.pagination{
-  position:center;
+
+.btn-back {
+  margin-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  color: white;
+  background-color: #b57ae6;
+}
+.btn-back:hover{
+  color: white;
+  background-color: #aa60e7;
+}
+
+
+
+.btn-filter:hover {
+  color: white;
+  background-color: #aa60e7;
+}
+
+.textinput {
+  float: left;
+  width: 100%;
+  min-height: 75px;
+  outline: none;
+  resize: none;
+  border: 1px solid grey;
+}
+
+.pagination {
+  margin-top: 80px;
+  position: center;
   top: 90%;
-  text-align:center;
-  
+  text-align: center;
+
 }
+
 .previous-pagination {
   background-color: #f1f1f1;
   color: black;
@@ -402,23 +440,18 @@ body {
   background-color: #cf11cf;
   color: white;
 }
-.filter-btn:hover{
+
+.filter-btn:hover {
   background-color: white;
   border: 1px solid #b57ae6;
 }
-.text-custom:hover{
+
+.text-custom:hover {
   color: #b57ae6;
 }
 
-.filter-icon:hover{
-  color: #b57ae6;
-}
-
-.text-custom{
+.text-custom {
   color: white;
-}
-.filter-icon{
-  color: white!important;
 }
 
 i.far {
@@ -478,6 +511,7 @@ span.nrate {
   .card {
     padding: 2vh;
     width: 100%
+    
   }
 
   span.rate {
@@ -521,7 +555,7 @@ body {
   -webkit-box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   box-shadow: 0 1px 20px 0 rgba(69, 90, 100, 0.08);
   border: none;
-  margin-bottom: 30px
+  margin-bottom: 30px;
 }
 
 .m-r-0 {
@@ -746,6 +780,9 @@ h6 {
 .Filter {
   padding-top: 1%;
 }
+.filter{
+  margin-top: 33px;
+}
 
 .align {
   padding-top: 25px;
@@ -950,6 +987,7 @@ h6 {
 
 
 /*** Navbar ***/
+
 .sidebar .navbar .navbar-nav .nav-link {
   padding: 7px 20px;
   color: var(--light);
@@ -1147,10 +1185,6 @@ body {
   padding-bottom: 10%;
 }
 
-#logout {
-  position: fixed;
-  bottom: 3%;
-}
 
 a.logout-btn:hover {
   color: red;
@@ -1374,7 +1408,7 @@ html,
 body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  height: 100%;
+  min-height: 100vh;
   width: 100%;
   background: #FFF;
   font-family: 'Roboto', sans-serif;
@@ -1386,6 +1420,11 @@ body {
   display: table;
   height: 100%;
   width: 100%;
+}
+
+.sticky-footer {
+  position: sticky;
+  top: 100%;
 }
 
 .container-fostrap {
@@ -1455,6 +1494,9 @@ h1.heading {
   height: 200px;
   object-fit: cover;
   transition: all .25s ease;
+}
+.card-img{
+  margin-left: 100px;
 }
 
 .card-content {
@@ -1562,4 +1604,110 @@ label {
 input,
 label {
   margin: .4rem 0;
+}
+
+#BackButton {
+  padding-left: 17rem;
+  margin-top: 15rem;
+}
+
+.my-box {
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+
+.AddMemberPool{
+  width: 100%;
+  margin-left: 10px;
+}
+
+#dashselect {
+  padding-top: 10rem;
+}
+
+
+#denied {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#denied.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
+}
+
+
+#accept {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  bottom: 30px;
+  font-size: 17px;
+}
+
+#accept.show {
+  visibility: visible;
+  -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {bottom: 0; opacity: 0;} 
+  to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+  from {bottom: 0; opacity: 0;}
+  to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+  from {bottom: 30px; opacity: 1;} 
+  to {bottom: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+  from {bottom: 30px; opacity: 1;}
+  to {bottom: 0; opacity: 0;}
 }
